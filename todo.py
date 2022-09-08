@@ -11,13 +11,13 @@ print("""
 todos = []
 counter = 1
 while True:
-    print("*" * 30)
+    print("*" * 35)
     user_input = input("Enter a command. Type 'h' for help:\n> ")
-    todos.append(user_input)
+    todos.append(f"{counter}) {user_input}")
+    counter += 1
 
     for todo in todos:
-        print(f"{counter}) {todo}")
-        counter += 1
+        print(todo)
     
 
 
