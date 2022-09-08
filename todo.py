@@ -1,4 +1,5 @@
 # Todo List App
+# Run using command line
 
 print("""
   _____         _           
@@ -8,8 +9,10 @@ print("""
    |_|\___/ \__,_|\___/|___/
 """)
 
+# Create empty todos and completed todos lists
 todos = []
 completed = []
+
 while True:
     for i in range(len(todos)):
         print(f"{i+1}) {todos[i]}")
