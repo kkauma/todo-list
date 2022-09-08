@@ -19,7 +19,9 @@ while True:
         
     print("***********************************")
     print("Enter a command. Type 'h' for help:")
+    # Get user input
     command = input("> ")
+
     if command == "q":
         break
     elif command == "h":
@@ -36,7 +38,8 @@ while True:
             completed.append(done_todo)
     else: 
         todos.append(command)
-    # Print todos from list
+
+# Print completed todos from list
 if completed:
     print(f"You completed {len(completed)} todos today: ")
     for todo in completed:
