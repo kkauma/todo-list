@@ -8,7 +8,17 @@ print("""
    |_|\___/ \__,_|\___/|___/
 """)
 
-print("*" * 30)
+todos = []
+counter = 1
+while True:
+    print("*" * 30)
+    user_input = input("Enter a command. Type 'h' for help:\n> ")
+    todos.append(user_input)
 
-user_input = input("Enter a command. Type 'h' for help: ")
+    for todo in todos:
+        print(f"{counter}) {todo}")
+        counter += 1
+    
+
+
 
